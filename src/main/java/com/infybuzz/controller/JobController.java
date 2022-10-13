@@ -1,5 +1,6 @@
 package com.infybuzz.controller;
 
+import com.infybuzz.service.JobService;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameter;
 import org.springframework.batch.core.JobParameters;
@@ -20,29 +21,12 @@ import java.util.Map;
 public class JobController {
 
     @Autowired
-    private JobLauncher jobLauncher;
-
-    @Qualifier("firstJob")
-    @Autowired
-    private Job firstJob;
-    @Qualifier("secondJob")
-    @Autowired
-    private Job secondJob;
+    private JobService jobService;
 
 
     @GetMapping("/start/{jobName}")
     public String startJob(@PathVariable String jobName) throws Exception{
-
-        Map<String, JobParameter> params = new HashMap<>();
-        params.put("currentTime", new JobParameter((System.currentTimeMillis())));
-        JobParameters jobParameters = new JobParameters(params);
-
-        System.out.println("Starting the Job.......");
-        if(jobName.equals("First Job")){
-            jobLauncher.run(firstJob,jobParameters);
-        } else if(jobName.equals("Second Job")){
-            jobLauncher.run(secondJob,jobParameters);
-        }
+        jobService.startJob(jobName);
         return "Job started.......";
     }
 }
