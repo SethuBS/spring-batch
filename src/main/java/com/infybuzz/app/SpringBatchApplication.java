@@ -8,7 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableBatchProcessing
 @ComponentScan({"com.infybuzz.config","com.infybuzz.service","com.infybuzz.listener",
-		       "com.infybuzz.processor","com.infybuzz.reader","com.infybuzz.writer"})
+		       "com.infybuzz.processor","com.infybuzz.reader","com.infybuzz.writer",
+				"com.infybuzz.controller"})
 public class SpringBatchApplication {
 
 	public static void main(String[] args) {
