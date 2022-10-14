@@ -8,7 +8,7 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.infybuzz</groupId>
+	<groupId>com.payu</groupId>
 	<artifactId>Spring-batch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring-batch</name>
@@ -41,7 +41,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>

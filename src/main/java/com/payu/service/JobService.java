@@ -1,6 +1,6 @@
-package com.infybuzz.service;
+package com.payu.service;
 
-import com.infybuzz.model.JobParamsRequest;
+import com.payu.model.JobParamsRequest;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobParameter;

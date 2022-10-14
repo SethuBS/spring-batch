@@ -1,8 +1,7 @@
-package com.infybuzz.listener;
+package com.payu.listener;
 
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobExecutionListener;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @Component

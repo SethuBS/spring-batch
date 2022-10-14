@@ -1,4 +1,4 @@
-package com.infybuzz.reader;
+package com.payu.reader;
 
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.NonTransientResourceException;

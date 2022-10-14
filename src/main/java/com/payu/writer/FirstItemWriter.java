@@ -1,4 +1,4 @@
-package com.infybuzz.writer;
+package com.payu.writer;
 
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.stereotype.Component;

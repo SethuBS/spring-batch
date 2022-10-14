@@ -1,4 +1,4 @@
-package com.infybuzz.service;
+package com.payu.service;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;

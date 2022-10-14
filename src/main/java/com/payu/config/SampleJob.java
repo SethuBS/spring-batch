@@ -1,12 +1,12 @@
-package com.infybuzz.config;
+package com.payu.config;
 
-import com.infybuzz.listener.FirstJobListener;
-import com.infybuzz.listener.FirstStepListener;
-import com.infybuzz.processor.FirstItemProcessor;
-import com.infybuzz.reader.FirstItemReader;
-import com.infybuzz.service.FirstTasklet;
-import com.infybuzz.service.SecondTasklet;
-import com.infybuzz.writer.FirstItemWriter;
+import com.payu.listener.FirstJobListener;
+import com.payu.listener.FirstStepListener;
+import com.payu.processor.FirstItemProcessor;
+import com.payu.reader.FirstItemReader;
+import com.payu.service.FirstTasklet;
+import com.payu.service.SecondTasklet;
+import com.payu.writer.FirstItemWriter;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;

@@ -1,4 +1,4 @@
-package com.infybuzz.app;
+package com.payu.app;
 
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;
@@ -9,9 +9,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableBatchProcessing
-@ComponentScan({"com.infybuzz.config","com.infybuzz.service","com.infybuzz.listener",
-		       "com.infybuzz.processor","com.infybuzz.reader","com.infybuzz.writer",
-				"com.infybuzz.controller"})
+@ComponentScan({"com.payu.config","com.payu.service","com.payu.listener",
+		       "com.payu.processor","com.payu.reader","com.payu.writer",
+				"com.payu.controller"})
 @EnableAsync
 @EnableScheduling
 public class SpringBatchApplication {

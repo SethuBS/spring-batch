@@ -1,4 +1,4 @@
-package com.infybuzz.model;
+package com.payu.model;
 
 public class JobParamsRequest {
 
